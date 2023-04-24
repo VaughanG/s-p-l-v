@@ -1,0 +1,6 @@
+{
+	"runtime": "nodejs18.x",
+	"handler": "..\\..\\..\\..\\..\\Sveltekit\\SvelteKitAuthenticationwithLuciaPrisma\\skel-p-l-v\\s-p-l-v\\.svelte-kit\\vercel-tmp\\index.js",
+	"launcherType": "Nodejs",
+	"experimentalResponseStreaming": true
+}
