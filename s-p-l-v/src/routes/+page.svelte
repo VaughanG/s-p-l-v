@@ -1,13 +1,20 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script>
+	export let data;
+</script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1>Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code>/src/routes/+layout.svelte</code> - barebones layout, the CSS import order is critical!</li>
-			<li><code>/src/app.postcss</code> - minimal css to make the page full screen, may not be relevant for your project</li>
-			<li><code>/src/routes/+page.svelte</code> - this page, you can replace the contents</li>
-		</ul>
-	</div>
+<div class="hero min-h-screen" style="background-image: url(https://placeimg.com/640/480/tech);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        {#if data.user}
+        <h1 class="mb-5 text-5xl font-bold">Hello {data.user.username}</h1>
+        {:else}
+        <h1 class="mb-5 text-5xl font-bold">Hello there.</h1>
+        {/if}
+        <p class="mb-5">Thanks for stopping by.</p>
+        <p class="mb-5">This is just a template. Start building your webpage with 
+          <a href="https://tailwindcss.com/docs/installation" class="link">TailwindCSS</a> and <a href="https://daisyui.com/" class="link">DaisyUI</a>.
+        </p>
+      </div>
+    </div>
 </div>
